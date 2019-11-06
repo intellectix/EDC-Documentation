@@ -1,0 +1,11 @@
+{
+  "docs": {
+    "Welcome": ["overview"],
+    "Getting Started": ["web-install", "embedded-install"],
+    "Web Framework Applications": ["doc3"],
+    "Embedded Applications": []
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}

@@ -1,7 +1,7 @@
 ---
 id: web-install
 title: Install the EDC for Frontend Frameworks
-sidebar_label: EDC for Frontend Frameworks
+sidebar_label: API Installation
 ---
 
 ## Overview

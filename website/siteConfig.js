@@ -73,7 +73,7 @@ const siteConfig = {
   */
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
-  copyright: `Copyright © ${new Date().getFullYear()} Your Name or Your Company Name`,
+  copyright: `Copyright © ${new Date().getFullYear()} Intellectix`,
 
   highlight: {
     // Highlight.js theme to use for syntax highlighting in code blocks.
@@ -84,7 +84,7 @@ const siteConfig = {
   scripts: ['https://buttons.github.io/buttons.js'],
 
   // On page navigation for the current documentation page.
-  onPageNav: 'separate',
+  //onPageNav: 'separate',
   // No .html extensions for paths.
   cleanUrl: true,
 

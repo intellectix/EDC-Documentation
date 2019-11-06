@@ -13,3 +13,5 @@
 To make new pages, create files in the docs folder.
 
 To add pages to sidenav, open sidebars.json. Then add the name of the file inside one of the lists. **Requires server restart to see changes.**
+
+Check the [documentation](https://docusaurus.io) for how to use Docusaurus.

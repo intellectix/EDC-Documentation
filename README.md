@@ -3,7 +3,7 @@
 1. Clone the Repo.
 - Open command prompt and make a directory
 - CD into directory
-- git clone "URL"
+- git clone https://github.com/intellectix/EDC-Documentation.git
 - run "npm install" to install all packages
 
 2. CD Into Website folder.

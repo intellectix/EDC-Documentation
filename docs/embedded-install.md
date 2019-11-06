@@ -6,13 +6,13 @@ sidebar_label: .Net Installation
 
 ## Overview
 
-The EDC can be installed into any .Net Framework or .Net Core application as a dll available on [NuGet](https://www.nuget.org/). This allows the application to receive the benefits of the EDC outlined in the **[overview](overview.md)** when retrieving data. Unlike the Web Application API version of the EDC, the dll allows for simplified data retrieval directly from your controller methods without the need for generating Models.
+The EDC can be setup with any .Net Framework or .Net Core application as a dll available on [NuGet](https://www.nuget.org/). This allows the application to receive the benefits of the EDC outlined in the **[overview](overview.md)** when retrieving data. Unlike the Web Application API version of the EDC, the dll allows for simplified data retrieval directly from your controller methods without the need for generating Models.
 
 ## Installation
 
-To install the EDC dll, there are a few prerequisits that have to be met:
-1. The EDC requires a pre-existing SQL Server database to be created. The connection string is necessary during the EDC installation.
-2. The application **must** be running the latest version of the .Net Framework (v4.7.2) or .Net Core (v2.2.7).
+To setup the EDC dll, there are a few prerequisits that have to be met:
+1. The EDC requires a pre-existing SQL Server database to be created. The connection string is necessary during the EDC setup.
+2. The application **must** be running .Net Framework (v4.6.1 or above) or .Net Core (v2.2.7).
 
 ### .Net Framework
 
@@ -45,7 +45,7 @@ namespace Application
             app.LoadLicense(@"***Provided License Information Here***");
 
             //Set EDC connection string
-            ConfigureDb.UseSqlServer(ConfigurationManager.ConnectionStrings["AppDb"].ConnectionString, IvSalt, SecretKey, CacheTimeoutMinutes);
+            ConfigureDb.UseSqlServer("***Provide dB connection string***", IvSalt, SecretKey, CacheTimeoutMinutes);
 
             //Set up Dashboard and migrate
             app.UseEDCDashboard(typeof(Startup).Assembly);
@@ -96,7 +96,7 @@ namespace EDC.AspNetCore.Web.test
             services.LoadLicense(@"***Provided License Information***");
 
             //Set EDC connection string
-            ConfigureDb.UseSqlServer(Configuration.GetConnectionString("AppDb"), IvSalt, SecretKey, CacheTimeoutMinutes);
+            ConfigureDb.UseSqlServer("***Provide dB connection string***", IvSalt, SecretKey, CacheTimeoutMinutes);
 
             services.AddEDC();
 

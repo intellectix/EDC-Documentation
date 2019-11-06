@@ -22,9 +22,9 @@ The EDC GET requests allow for simplified data retrieval directly from controlle
 Get All returns all records from the requested table.
 
 ```c#
-public ActionResult Get() 
+public ActionResult Get(string connectorName, string tableName) 
 {
-    EDC.Api.TableOperations.GetAll(string connectorName, string tableName, HttpRequestMessage request, LoggingService loggingService = null)
+    EDC.Api.TableOperations.GetAll(connectorName, tableName, HttpRequestMessage request, LoggingService loggingService = null)
 }
 ```
 
@@ -35,9 +35,9 @@ If the Get is successful, the EDC returns a list of all the objects from the tab
 Get By Id returns a single record from the requested table.
 
 ```c#
-public ActionResult Get() 
+public ActionResult Get(string connectorName, string tableName, string id) 
 {
-    EDC.Api.TableOperations.GetById(string connectorName, string tableName, string id, LoggingService loggingService = null)
+    EDC.Api.TableOperations.GetById(connectorName, tableName, id, LoggingService loggingService = null)
 }
 ```
 

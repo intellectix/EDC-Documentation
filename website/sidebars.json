@@ -3,7 +3,7 @@
     "Welcome": ["overview"],
     "Getting Started": ["web-install", "embedded-install"],
     "Frontend Frameworks": [""],
-    ".Net Applications": ["table-operations"]
+    ".Net Applications": ["table-operations", "view-operations"]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]

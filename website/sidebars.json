@@ -2,6 +2,7 @@
   "docs": {
     "Welcome": ["overview"],
     "Getting Started": ["web-install", "embedded-install"],
+    "Using The Dashboard": ["home-page", "connectors", "roles"],
     "Frontend Frameworks": [""],
     ".Net Applications": ["table-operations", "view-operations"]
   },

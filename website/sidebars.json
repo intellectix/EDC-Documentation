@@ -4,6 +4,6 @@
     "Getting Started": ["web-install", "embedded-install"],
     "Using The Dashboard": ["home-page", "connectors", "roles", "app-keys", "users", "requests", "developer-console"],
     "Frontend Frameworks": [""],
-    ".Net Applications": ["table-operations", "view-operations"]
+    ".Net Applications": ["table-operations", "view-operations", "schema-operations"]
   }
 }

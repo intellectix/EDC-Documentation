@@ -2,11 +2,8 @@
   "docs": {
     "Welcome": ["overview"],
     "Getting Started": ["web-install", "embedded-install"],
-    "Using The Dashboard": ["home-page", "connectors", "roles", "app-keys"],
+    "Using The Dashboard": ["home-page", "connectors", "roles", "app-keys", "users", "requests", "developer-console"],
     "Frontend Frameworks": [""],
     ".Net Applications": ["table-operations", "view-operations"]
-  },
-  "docs-other": {
-    "First Category": ["doc4", "doc5"]
   }
 }

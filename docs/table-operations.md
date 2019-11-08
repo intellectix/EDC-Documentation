@@ -13,7 +13,7 @@ In order to use the EDC to interact with data, the following prerequisits must b
 3. A [user]() must be created through the EDC dashboard and added to the role.
 4. `using EDC;` has been added to the controller.
 
-The final parameter in each request determines if a user has to be signed in to make the request. Setting loggingService = true allows the EDC to store a log of each request that has been made. 
+The final parameter in each request determines if a user has to be signed in to make the request. Setting loggingService = true allows the EDC to store a log of each request that has been made. All logs are available immediately through the EDC dashboard.
 
 ## Get Requests
 
@@ -111,4 +111,10 @@ public ActionResult Get(string connectorName, string tableName)
 The EDC will returns the View Model of Customers containing only the FirstName, LastName and Email where FirstName equals "John". This View Model can then be used in a View to display the data on the page.
 
 To add more customer data in the future, update the View Model and the new data will be available on the corresponding Views.
+
+## Pro
+
+The Pro version of the EDC allows developers to utilize the same requests from the Free version with the addition of adding a User as one of the request parameters for more in-depth logging and permissioning. 
+
+**Important:** If a user is not added to a Pro request, the request will fail.
 

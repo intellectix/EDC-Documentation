@@ -21,4 +21,33 @@ Because SSN numbers are highly sensitive data, it is important that not all user
 
 ## Adding a Role
 
-To add a Role to the EDC, navigate to `Roles` on the left side of the EDC dashboard.
+To add a Role to the EDC, navigate to `Roles` on the left side of the EDC dashboard. Then click 'Add Role'.
+
+Fill in the Name, Description, and Status and click 'Save'. The permissions tabs and Members tabs are now unlocked.
+
+## Adding a Permission
+
+Prerequisite: Make sure that a Connector has been added to the EDC before creating a Permission. The Connector information is needed.
+
+On the Roles home page, click on the Name of the role to be directed to that Role's Edit page. Then, click on the Permissions tab and click 'Add Permission'.
+
+Fill in the required information and click 'Save'. The Role now has permission to either Read,Write or Delete data within that connector.
+
+## Deleting a Permission
+
+On the Role's Edit page, click the 'Permissions' tab. Then click the 'X' in the table for the permission to delete. The permission will now be permanently deleted.
+
+## Adding a Member
+
+Members are the users that can interact with the system. By default, a user has no permissions to any data until it has been assigned to a role. 
+
+Prerequisite: Make sure that a User has been added to the EDC before creating a Member.
+
+In the Role's Edit page, click the 'Members' tab. Then, click 'Add Member'. Select the members to add and then click 'Save'. These Users can now interact with the database in accordance to the Permissions that have been applied to the Role.
+
+## Deleting a Member
+
+On the Role's Edit page, navigate to the Members tab and click the 'X' for the User to be deleted. This user will be permanently removed from the Role and all database access will be removed.
+
+
+

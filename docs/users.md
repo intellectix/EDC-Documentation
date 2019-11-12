@@ -18,3 +18,7 @@ The newly created User can now be assigned to a [Role](roles.md).
 
 To edit a User, select the User's name on the Users homepage. Then, update the users details and select 'Save'. The User's new details have now been updated throughout the system.
 
+## Deleting a User
+
+To delete a User, navigate to the User Home page. Thenm select the `X` next to the associated User. This user will be removed from the system, and all privileges will be revoked.
+

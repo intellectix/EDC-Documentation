@@ -4,7 +4,7 @@ title: Roles
 sidebar_label: Roles [Pro]
 ---
 
-Roles allow the EDC to provide real-time permissioning to the data that users can access. By default, no data is allowed to be access from the database until a permission has been added. In addition, the permissions can be broken down to the column level within tables. For example, assume there is a database with a User table which contains the following fields:
+Roles allow the EDC to provide real-time permissioning to the data that users can access. By default, no data is allowed to be accessed from the database until a permission has been added. In addition, the permissions can be broken down to the column level within tables. For example, assume there is a database with a User table which contains the following fields:
 
 ```c#
 public class Users 

@@ -13,7 +13,9 @@ In order to use the EDC to interact with the database Schema, the following prer
 
 The final parameter in each request determines if a user has to be signed in to make the request. Setting loggingService = true allows the EDC to store a log of each request that has been made. 
 
-## Connector Definition
+## Free
+
+### Connector Definition
 
 Get the definition of a specific connector.
 
@@ -47,7 +49,7 @@ If successful, the EDC returns an object in the following format containing the 
 }
 ```
 
-## Database Table List 
+### Database Table List 
 
 Get a list of all the tables in a database.
 
@@ -59,3 +61,31 @@ public ActionResult GetDBList(string connectorName)
 ```
 
 If successful, the EDC will return a JSON object containing the names of all the Tables inside the connector.
+
+## Pro
+
+### Connector Definition
+
+```c#
+public ActionResult GetDefinition(string connectorName, IPrincipal user)
+{
+    var definition = EDC.Api.Pro.SchemaOperations.Definition(connectorName, user, LoggingService loggingService = null);
+
+    return definition;
+}
+```
+
+The EDC logs which user made the request, and returns the formatted definition of the requested connector.
+
+### Database Table List
+
+```c#
+public ActionResult GetDBList(string connectorName, IPrincipal user)
+{
+    var list = EDC.Api.SchemaOperations.DbTableList(connectorName, user LoggingService loggingService = null);
+
+    return list;
+}
+```
+
+The EDC logs which user made the request, and returns the list of tables from the requested connector.

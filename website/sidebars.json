@@ -5,6 +5,6 @@
     "Using The Dashboard": ["home-page", "connectors", "roles", "app-keys", "users", "requests", "developer-console"],
     "Frontend Frameworks": [""],
     ".Net Applications": ["table-operations", "view-operations", "schema-operations"],
-    "Web API": ["basic-auth", "schema", "stored-procedure"]
+    "Web API": ["basic-auth", "schema", "stored-procedure", "stored-procedure-definition", "table-definition", "tables"]
   }
 }

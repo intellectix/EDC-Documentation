@@ -34,6 +34,8 @@ Roles allow for column-level database permissioning. By creating a Role, a devel
 
 ### App Keys
 
+App Keys allow the EDC to give a unique ID to an application. This key is necessary in order to authorize requests and to control which users can access certain applications. By allowing the EDC to create multiple App Keys in a single instance, developers can leverage the EDC to control data flow through multiple applications simultaneously when installed as a Web Api. 
+
 ### Users
 
 Users interact with the EDC based on the Role they have been assigned to. By default, a User has no access to any data until they have been assigned Role permissions. In addition, by requiring Users to be logged in to make data requests, the EDC is able to provide more in-depth logging information which allows developers to quickly see who is making database requests.
